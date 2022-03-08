@@ -27,12 +27,12 @@ public class MainViewController implements Initializable{
 	
 	@FXML
 	public void onMenuItemCadastrarAction() {
-		System.out.println("onMenuItemCadastrarAction");
+		loadView("/gui/Form.fxml");
 	}
 	
 	@FXML
 	public void onMenuItemCadastradosAction() {
-		loadView("/gui/DepartmentList.fxml");
+		System.out.println("onMenuItemCadastrarAction");
 	}
 	
 	@FXML
