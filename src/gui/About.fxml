@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-
-<VBox prefHeight="511.0" prefWidth="401.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+<VBox prefHeight="511.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label text="About">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-         <padding>
-            <Insets bottom="10.0" left="20.0" top="10.0" />
-         </padding>
-      </Label>
-      <Label alignment="TOP_LEFT" prefHeight="457.0" prefWidth="361.0" text="JavaFX appication demo">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <padding>
-            <Insets left="10.0" top="10.0" />
-         </padding>
-         <VBox.margin>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
-         </VBox.margin>
-      </Label>
+      <AnchorPane prefHeight="515.0" prefWidth="401.0">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="134.0" layoutX="33.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imag/Logo_oficial_CCB.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="92.0" fitWidth="80.0" layoutX="290.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imag/logo1.png" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="18.0" layoutY="101.0" prefHeight="390.0" prefWidth="365.0" text="Product Version:&#10;JavaFX appication demo" />
+         </children>
+      </AnchorPane>
    </children>
 </VBox>

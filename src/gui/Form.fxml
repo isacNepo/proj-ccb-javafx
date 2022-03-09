@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox prefHeight="399.0" prefWidth="469.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+<VBox prefHeight="399.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FormController">
    <children>
       <Label prefHeight="65.0" prefWidth="252.0" text="Departamento de Cadastro">
          <font>
@@ -45,8 +44,8 @@
             <Label layoutX="231.0" layoutY="201.0" text="Possui NR? (Sim/Não)" />
             <TextField layoutX="124.0" layoutY="197.0" prefHeight="25.0" prefWidth="74.0" />
             <TextField layoutX="357.0" layoutY="197.0" prefHeight="25.0" prefWidth="85.0" />
-            <Button defaultButton="true" layoutX="128.0" layoutY="270.0" mnemonicParsing="false" text="Cadastrar" />
-            <Button cancelButton="true" layoutX="280.0" layoutY="270.0" mnemonicParsing="false" text="Cancelar" />
+            <Button defaultButton="true" layoutX="128.0" layoutY="270.0" mnemonicParsing="false" onAction="#botaoCadastrarClicado" text="Cadastrar" />
+            <Button cancelButton="true" layoutX="280.0" layoutY="270.0" mnemonicParsing="false" onAction="#botaoCancelarClicado" text="Cancelar" />
          </children>
       </AnchorPane>
    </children>
